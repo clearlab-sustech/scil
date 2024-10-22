@@ -156,14 +156,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Multi-stage robotic manipulation requires executing structured sequences of actions to achieve sub-goals, 
-            posing challenges due to ambiguous stage transitions, which occur when similar observations are related to different sub-goals. 
-            To address this, we propose Stage-Conditioned Imitation Learning (SCIL), a novel hierarchical framework designed for multi-stage manipulation tasks. 
-            SCIL combines a high-level stage observer, which predicts the current task stage based on sensory inputs, with a low-level stage-conditioned policy that generates actions tailored to the identified stage. 
-            This approach effectively mitigates the ambiguity arising from similar observations corresponding to different sub-goals, ensuring accurate and efficient task execution. 
-            Compared to existing imitation learning methods such as Action Chunking with Transformers (ACT) and Diffusion Policy, 
-            SCIL achieves a 70% improvement in success rate on various multi-stage manipulation tasks with ambiguity between stages. 
-            Extensive real-world experiments demonstrate that SCIL significantly solves ambiguous stage transitions, thereby enhancing overall task performance and manipulation efficiency.
+            Recent advancements in end-to-end imitation learning have shown promise in handling multi-stage robotic manipulation, which involves executing structured sequences of actions to achieve sub-goals. However, challenges arise when similar observations appear at different stages, creating ambiguity in selecting the correct action for the current sub-goal. In this paper, we propose Stage-Conditioned Imitation Learning (SCIL), a novel hierarchical imitation learning framework to tackle the ambiguity issue. SCIL consists of two key components: a high-level stage observer and a low-level stage-conditioned policy. The high-level stage observer is trained on a stage-labeled dataset using a Gated Recurrent Unit, which predicts the current task stage based on the observation and hidden state. The low-level stage-conditioned policy is trained using a conditional variational autoencoder, generating actions specifically adapted to the identified stage. SCIL facilitates precise stage transitions, effectively mitigating ambiguity between similar observations across different stages. Compared to existing end-to-end imitation learning methods such as Action Chunking with Transformers and Diffusion Policy, SCIL achieves a 70% improvement in success rate on various real-world multi-stage manipulation tasks with ambiguity between stages.
           </p>
         </div>
       </div>
@@ -214,7 +207,7 @@
 
        <div class="item", style="text-align: center;">
         <!-- Your image here -->
-        <img src="static/images/scact.png" alt="MY ALT TEXT" style="width: 95%; height: auto;"/>
+        <img src="static/images/scact.jpg" alt="MY ALT TEXT" style="width: 95%; height: auto;"/>
         <!-- <h2 class="subtitle has-text-centered">
           First image description.
         </h2> -->
